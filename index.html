@@ -1,7 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HQG6SRKGCV"></script>
 <script>
@@ -13,7 +13,7 @@
 </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Static Website</title>
+  <title>Product Page</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -44,8 +44,16 @@
       padding: 20px;
       text-align: center;
     }
+    .product {
+      background-color: white;
+      border-radius: 10px;
+      padding: 30px;
+      max-width: 500px;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
     .btn {
-      background-color: #008cba;
+      background-color: #28a745;
       color: white;
       padding: 10px 20px;
       border: none;
@@ -53,9 +61,11 @@
       text-decoration: none;
       font-size: 16px;
       cursor: pointer;
+      display: inline-block;
+      margin-top: 20px;
     }
     .btn:hover {
-      background-color: #005f5f;
+      background-color: #1e7e34;
     }
     footer {
       background-color: #333;
@@ -71,25 +81,37 @@
 <body>
 
   <header>
-    <h1>Welcome to My Static Website</h1>
+    <h1>Product Showcase</h1>
   </header>
 
   <nav>
     <a href="#">Home</a>
+    <a href="#">Products</a>
     <a href="#">About</a>
-    <a href="#">Services</a>
     <a href="#">Contact</a>
   </nav>
 
   <main>
-    <h2>About This Site</h2>
-    <p>This is a basic example of a static website built using only HTML and CSS.</p>
-    <a href="landing.html" class="btn">Go to Landing Page</a>
+    <div class="product">
+      <h2>Smart Watch X200</h2>
+      <p>Experience the next generation of smart wearables with the X200. Features include fitness tracking, heart rate monitoring, message notifications, and more.</p>
+      <p><strong>Price: ₹4,999</strong></p>
+      <a href="landing.html" class="btn">Buy</a>
+    </div>
   </main>
 
   <footer>
-    &copy; 2025 My Static Site. All rights reserved.
+    &copy; 2025 SmartTech. All rights reserved.
   </footer>
 
 </body>
 </html>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HQG6SRKGCV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HQG6SRKGCV');
+</script>
